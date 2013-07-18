@@ -3,12 +3,13 @@ ruby '2.0.0'
 
 gem 'rails', '4.0.0'
 gem 'pg'
+gem 'unicorn'
 gem 'sass-rails', '~> 4.0.0'
 gem 'devise'
 gem 'jquery-rails'
 gem 'slim'
 gem 'slim-rails'
-gem 'zurb-foundation'
+gem 'uglifier'
 gem 'bluecloth'
 
 group :development, :test do
