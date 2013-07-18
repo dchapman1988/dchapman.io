@@ -11,6 +11,7 @@ gem 'slim'
 gem 'slim-rails'
 gem 'uglifier'
 gem 'bluecloth'
+gem 'newrelic_rpm'
 
 group :development, :test do
   gem 'rspec-rails', '2.14.0.rc1'
