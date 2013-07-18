@@ -10,6 +10,8 @@ pkg
 rdoc
 spec/reports
 test/tmp
+log
+log/*
 test/version_tmp
 tmp
 *.sw*
