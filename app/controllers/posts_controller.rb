@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_filter :authentication_required, only: [:edit, :update, :create, :new, :destroy]
 
   # GET /posts
   def index

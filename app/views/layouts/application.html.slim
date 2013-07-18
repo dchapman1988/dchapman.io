@@ -5,5 +5,10 @@ html
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
+    = favicon_link_tag 'favicon.ico'
+    link href="http://fonts.googleapis.com/css?family=Expletus+Sans" rel="stylesheet" type="text/css"
   body
-    = yield
+    h1.header
+      = link_to(image_tag('ruby_icon.png', class: 'logo') + 'david@dchapman.io', root_path)
+    div.page_content
+      = yield

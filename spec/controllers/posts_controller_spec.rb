@@ -11,6 +11,10 @@ describe PostsController do
   # PostsController. Be sure to keep this updated too.
   let(:valid_session) { {} }
 
+  before :each do
+    set_valid_user_session
+  end
+
   describe "GET index" do
     it "assigns all posts as @posts" do
       post = Post.create! valid_attributes

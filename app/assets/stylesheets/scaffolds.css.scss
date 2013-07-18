@@ -1,12 +1,15 @@
 body {
+  font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  font-weight: 300;
+  letter-spacing: normal;
   background-color: #fff;
   color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
 
 p, ol, ul, td {
+  font-size: 1.125em;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -19,13 +22,14 @@ pre {
 }
 
 a {
+  padding: 5px 8px 5px 5px;
   color: #000;
   &:visited {
     color: #666;
   }
   &:hover {
     color: #fff;
-    background-color: #000;
+    background-color: #666;
   }
 }
 

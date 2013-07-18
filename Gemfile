@@ -9,9 +9,11 @@ gem 'jquery-rails'
 gem 'slim'
 gem 'slim-rails'
 gem 'zurb-foundation'
+gem 'bluecloth'
 
 group :development, :test do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '2.14.0.rc1'
+  gem 'capybara'
   gem 'pry'
   gem 'guard'
   gem 'guard-rspec'
