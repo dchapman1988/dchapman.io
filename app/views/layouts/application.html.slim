@@ -8,7 +8,7 @@ html
     = favicon_link_tag 'favicon.ico'
     link href="http://fonts.googleapis.com/css?family=Expletus+Sans" rel="stylesheet" type="text/css"
   body
-    h1.header
-      = link_to(image_tag('ruby_icon.png', class: 'logo') + 'david@dchapman.io', root_path)
     div.page_content
+      h1.header
+        = link_to(image_tag('ruby_icon.png', class: 'logo') + 'david@dchapman.io', root_path)
       = yield
