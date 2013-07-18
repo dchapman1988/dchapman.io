@@ -12,6 +12,7 @@ gem 'slim-rails'
 gem 'uglifier'
 gem 'bluecloth'
 gem 'newrelic_rpm'
+gem 'friendly_id', github: 'FriendlyId/friendly_id', branch: 'rails4'
 
 group :development, :test do
   gem 'rspec-rails', '2.14.0.rc1'

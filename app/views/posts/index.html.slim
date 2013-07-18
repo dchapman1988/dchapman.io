@@ -7,9 +7,10 @@ div.blog_wrapper
       h2.post_title
         = link_to post.title, post
       div.post_body
-        = render_markdown(post.body).html_safe
-      - if current_user.present?
-        div.post_actions
+        = truncate(render_markdown(post.body).html_safe, length: 710)
+      div.post_actions
+        = link_to 'read more >>', post, class: 'go_back_link'
+        - if current_user.present?
           = link_to 'Show', post
           = link_to 'Edit', edit_post_path(post)
           = link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete

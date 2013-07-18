@@ -5,7 +5,7 @@ describe PostsHelper do
     time_obj = Time.now
     date = time_obj.strftime("%m/%d/%Y")
     time = time_obj.strftime("%k:%M")
-    expected_results = "#{date} @ #{time}"
+    expected_results = "#{date} @ #{time} (less than a minute ago)"
     subject.instance_methods.should include :time_of_post
     expect(helper.time_of_post(time_obj)).to eq(expected_results)
   end

@@ -6,6 +6,7 @@ module PostsHelper
   def time_of_post(time_obj)
     date = time_obj.strftime("%m/%d/%Y")
     time = time_obj.strftime("%k:%M")
-    "#{date} @ #{time}"
+    distance = distance_of_time_in_words_to_now(time_obj)
+    "#{date} @ #{time} (#{distance} ago)"
   end
 end

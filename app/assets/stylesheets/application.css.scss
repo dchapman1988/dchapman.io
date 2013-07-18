@@ -13,10 +13,11 @@
  */
 
 body {
+  background: url('http://origami.co.uk/images/bg.png');
   padding: 40px 10px 10px 10px;
   width: 748px;
   margin: 0 auto;
-  font-family: 'Expletus Sans', cursive;
+  font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: 300;
   letter-spacing: normal;
   background-color: #fff;
@@ -35,15 +36,20 @@ body {
   margin-right: 10px;
 }
 
+div.post {
+  margin: 4px 3px 100px 3px;
+}
+
 div.post_body {
   border-bottom: 1px solid;
   border-bottom-style: dotted;
   border-color: #D9D9D9;
   padding: 20px 0;
-  margin: 4% 3% 4% 3%;
+  margin: 4px 3px 10px 3px;
 }
 
 .post_title {
+  font-family: 'Clarendon URW Regular', Clarendon, 'Century Schoolbook', 'Times New Roman', Times, serif;
   font-size: 2.25em;
   font-weight: 600;
   line-height: 1.5em;
@@ -52,19 +58,6 @@ div.post_body {
   margin-bottom: 0.1em;
   border-bottom: dotted 1px #D9D9D9;
   border-top: dotted 1px #D9D9D9;
-}
-
-p, ol, ul, td {
-  font-size: 1.125em;
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-}
-
-pre {
-  background-color: #eee;
-  padding: 10px;
-  font-size: 11px;
 }
 
 a {
@@ -77,6 +70,18 @@ a {
     color: #fff;
     background-color: #666;
   }
+}
+
+p, ol, ul, td {
+  font-size: 1.125em;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
 }
 
 
@@ -117,4 +122,14 @@ div {
     font-size: 12px;
     list-style: square;
   }
+}
+
+footer {
+  border-top: 1px solid;
+  margin-top: 50px;
+  font-size: smaller;
+}
+
+.page_load_time {
+  float: right;
 }
