@@ -7,8 +7,8 @@ div.post
   div.post_body
     = render_markdown(@post.body).html_safe
   div.actions
-    = link_to '<< go back', root_path, class: 'go_back_link'
-    - if current_user.present? 
+    = link_to "&larr;go back".html_safe, root_path, class: 'go_back_link'
+    - if current_user.present?
       = link_to 'Show', @post
       = link_to 'Edit', edit_post_path(@post)
       = link_to 'Destroy', @post, :confirm => 'Are you sure?', :method => :delete
