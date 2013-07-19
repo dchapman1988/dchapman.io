@@ -7,7 +7,7 @@ div.blog_wrapper
       h2.post_title
         = link_to post.title, post
       div.post_body
-        = truncate(render_markdown(post.body).html_safe, length: 710)
+        = truncate_html(render_markdown(post.body).html_safe, length: 710)
       div.post_actions
         = link_to 'read more >>', post, class: 'go_back_link'
         - if current_user.present?
