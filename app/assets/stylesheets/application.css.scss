@@ -27,6 +27,46 @@ body {
   line-height: 18px;
 }
 
+.social_buttons {
+  width: 128px;
+  float: right;
+}
+
+.social_buttons a {
+  width: 18px!important;
+  height: 18px!important;
+  display: inline-block;
+  opacity: .6;
+  overflow: hidden;
+  padding: 0;
+  margin: 0px 5px 0px 5px;
+  -webkit-transition: opacity .2s linear;
+  &:visited {
+    color: #666;
+  }
+  &:hover {
+    color: #fff;
+    opacity: 1.0;
+    background-color: #666;
+  }
+}
+
+.social_buttons a.twitter {
+  background: url('share.png') 0 0;
+}
+
+.social_buttons a.facebook {
+  background: url('share.png') -18px 0;
+}
+
+.social_buttons a.gplus {
+  background: url('share.png') -36px 0;
+}
+
+.social_buttons a.link {
+  background: url('share.png') -54px 0;
+}
+
 
 .header {
   padding: 0px 0px 20px 0px;
