@@ -12,3 +12,5 @@ div.post
       = link_to 'Show', @post
       = link_to 'Edit', edit_post_path(@post)
       = link_to 'Destroy', @post, :confirm => 'Are you sure?', :method => :delete
+  div.comments
+    = render partial: "disqus_thread"
