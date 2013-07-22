@@ -2,19 +2,20 @@ doctype
 html
   head
     title David Chapman | dchapman.io
+    link href="http://fonts.googleapis.com/css?family=Expletus+Sans" rel="stylesheet" type="text/css"
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
-    = csrf_meta_tags
+    = yield(:javascripts)
     = favicon_link_tag 'favicon.ico'
     = yield(:meta)
-    = yield(:javascripts)
-    link href="http://fonts.googleapis.com/css?family=Expletus+Sans" rel="stylesheet" type="text/css"
+    = csrf_meta_tags
   body
     content
-      h1.header
-        = link_to(image_tag('ruby_icon.png', class: 'logo') + 'david@dchapman.io', root_path)
+      header
+        h1.header
+          = link_to(image_tag('ruby_icon.png', class: 'logo') + 'david@dchapman.io', root_path)
       = yield
     footer
       pre
-        span.page_load_time= page_load_time_helper
+        span.page_load_time= page_load_time
         span.copy_right= "Copyright © #{Time.now.year} - David A. Chapman"
