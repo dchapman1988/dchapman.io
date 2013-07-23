@@ -6,4 +6,8 @@ module ApplicationHelper
   def current_url
     url_for(:only_path => false)
   end
+  
+  def page_title
+    @page_title.present? ? "#{@page_title} | dchapman.io" :  "David Chapman | dchapman.io"
+  end
 end

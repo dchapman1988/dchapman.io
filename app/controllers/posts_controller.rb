@@ -9,6 +9,8 @@ class PostsController < ApplicationController
 
   # GET /posts/1
   def show
+    @post = Post.find(params[:id])
+    @page_title = @post.title
   end
 
   # GET /posts/new
