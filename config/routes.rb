@@ -11,4 +11,6 @@ DchapmanIo::Application.routes.draw do
   }
 
   resources :posts
+
+  get :blog, controller: 'posts', action: 'index'
 end

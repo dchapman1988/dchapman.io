@@ -10,7 +10,9 @@ describe ApplicationHelper do
     helper.should respond_to :current_url
   end
 
-  it 'should have a current_url helper' do
+  it 'should have a page_title helper' do
     helper.page_title.should == "David Chapman | dchapman.io"
+    @page_title = 'my title'
+    helper.page_title.should == "my title | dchapman.io"
   end
 end

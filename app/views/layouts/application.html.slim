@@ -22,6 +22,8 @@ html
           i class="social foundicon-google-plus"
         = link_to('https://github.com/dchapman1988', class: 'github', target: '_blank')
           i class="social foundicon-github"
+        = link_to('/blog.atom', class: 'rss', target: '_blank')
+          i class="social foundicon-rss"
       h1.header
         = link_to(image_tag('ruby_icon.png', class: 'logo') + 'david@dchapman.io', root_path)
       = yield
