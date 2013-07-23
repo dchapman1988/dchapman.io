@@ -12,10 +12,16 @@ html
     = favicon_link_tag 'favicon.ico'
   body
     header
+
       span.social_buttons
-        = link_to '', 'https://twitter.com/end_guy', class: 'twitter'
-        = link_to '', 'https://facebook.com/dchapman1988', class: 'facebook'
-        = link_to '', 'https://plus.google.com/117438777615476396633/', class: 'gplus'
+        = link_to('https://twitter.com/end_guy', class: 'twitter')
+          i class="social foundicon-twitter"
+        = link_to('https://facebook.com/dchapman1988', class: 'facebook')
+          i class="social foundicon-facebook"
+        = link_to('https://plus.google.com/117438777615476396633/', class: 'gplus')
+          i class="social foundicon-google-plus"
+        = link_to('https://github.com/dchapman1988', class: 'github')
+          i class="social foundicon-github"
       h1.header
         = link_to(image_tag('ruby_icon.png', class: 'logo') + 'david@dchapman.io', root_path)
       = yield

@@ -14,6 +14,7 @@ gem 'bluecloth'
 gem 'newrelic_rpm'
 gem 'friendly_id', github: 'FriendlyId/friendly_id', branch: 'rails4'
 gem 'truncate_html'
+gem 'foundation-icons-sass-rails'
 
 group :development, :test do
   gem 'rspec-rails', '2.14.0.rc1'

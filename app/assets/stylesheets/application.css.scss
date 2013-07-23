@@ -11,60 +11,48 @@
  *= require_self
  *= require_tree .
  */
+@import 'foundation-icons';
 
 body {
   background: url('bg.png');
   padding: 40px 10px 10px 10px;
   height: 2150px;
-  width: 748px;
+  width: 850px;
   margin: 0 auto;
   font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: 300;
   letter-spacing: normal;
   background-color: #fff;
   color: #333;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 18px;
 }
 
 .social_buttons {
-  width: 128px;
+  width: 158px;
   float: right;
 }
 
 .social_buttons a {
-  width: 18px!important;
-  height: 18px!important;
+  text-decoration: none;
+  width: 20px!important;
+  height: 20px!important;
   display: inline-block;
   opacity: .6;
   overflow: hidden;
+  font-size: 20px;
   padding: 0;
   margin: 0px 5px 0px 5px;
   -webkit-transition: opacity .2s linear;
   &:visited {
-    color: #666;
+    color: #333;
   }
   &:hover {
-    color: #fff;
+    color: #333;
     opacity: 1.0;
-    background-color: #666;
+    background-color: #fff;
   }
-}
 
-.social_buttons a.twitter {
-  background: url('share.png') 0 0;
-}
-
-.social_buttons a.facebook {
-  background: url('share.png') -18px 0;
-}
-
-.social_buttons a.gplus {
-  background: url('share.png') -36px 0;
-}
-
-.social_buttons a.link {
-  background: url('share.png') -54px 0;
 }
 
 
