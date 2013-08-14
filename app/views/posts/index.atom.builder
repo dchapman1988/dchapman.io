@@ -1,5 +1,5 @@
 atom_feed do |feed|
-  feed.title("My great blog!")
+  feed.title("Developer's Blog for David Chapman")
   feed.updated(@posts[0].created_at) if @posts.length > 0
 
   @posts.each do |post|
@@ -8,7 +8,7 @@ atom_feed do |feed|
       entry.content(post.body, type: 'html')
 
       entry.author do |author|
-        author.name("DHH")
+        author.name("David Chapman")
       end
     end
   end
