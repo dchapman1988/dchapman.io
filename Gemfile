@@ -12,7 +12,7 @@ gem 'slim-rails'
 gem 'uglifier'
 gem 'bluecloth'
 gem 'newrelic_rpm'
-gem 'friendly_id', github: 'FriendlyId/friendly_id', branch: 'rails4'
+gem 'friendly_id', github: 'FriendlyId/friendly_id', branch: 'master'
 gem 'truncate_html'
 gem 'foundation-icons-sass-rails'
 

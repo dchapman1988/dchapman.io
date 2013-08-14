@@ -1,9 +1,9 @@
 GIT
   remote: git://github.com/FriendlyId/friendly_id.git
-  revision: c49ce30ff2b370669ccf1708e99fb08ab51435d9
-  branch: rails4
+  revision: 9a2086d8f2e3260318470674104be3b1254c8b2d
+  branch: master
   specs:
-    friendly_id (4.1.0.beta.2)
+    friendly_id (5.0.0.beta1)
 
 GEM
   remote: https://rubygems.org/
