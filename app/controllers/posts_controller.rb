@@ -13,7 +13,7 @@ class PostsController < ApplicationController
 
   # GET /posts/1
   def show
-    @post = Post.find(params[:id])
+    @post = Post.where(slug: params[:id]).first
     @page_title = @post.title
   end
 
@@ -55,7 +55,7 @@ class PostsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post
-      @post = Post.find(params[:id])
+      @post = Post.where(slug: params[:id]).first
     end
 
     # Only allow a trusted parameter "white list" through.
