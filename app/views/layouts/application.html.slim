@@ -3,7 +3,9 @@ html
   head
     title= page_title
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
-    = stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Expletus+Sans", media: "all"
+    = stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Faster+One", media: "all"
+    = stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Wendy+One", media: "all"
+    = stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Roboto:400,300", media: "all"
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = yield(:javascripts)
     = yield(:meta)
@@ -24,9 +26,17 @@ html
         = link_to('/blog.atom', class: 'rss', target: '_blank')
           i class="social foundicon-rss"
       h1.header
-        = link_to(image_tag('ruby_icon.png', class: 'logo') + '[david@dchapman.io]:~$', root_path)
-      = yield
+        = link_to(image_tag('ruby_icon.png', class: 'logo') + 'david@dchapman.io', root_path)
+    = yield
     footer
       pre
         span.page_load_time= page_load_time
         span.copy_right= "Copyright © #{Time.now.year} - David A. Chapman"
+    javascript:
+      var disqus_shortname = 'dchapman-io'; // required: replace example with your forum shortname
+      (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+      }());
