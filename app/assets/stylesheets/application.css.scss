@@ -184,8 +184,15 @@ footer {
   border-top: 1px solid;
   margin-top: 50px;
   font-size: smaller;
+  a {
+    text-decoration: none;
+  }
 }
 
 .page_load_time {
   float: right;
+}
+
+.delta_domain_epsilon {
+  margin-right: 10px;
 }

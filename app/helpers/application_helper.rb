@@ -1,6 +1,7 @@
 module ApplicationHelper
   def page_load_time
-    "Page Rendered in #{sprintf('%.3f', (Time.now.usec - @start_time).abs / 1000000.0)} seconds."
+    auth_link = link_to %(&epsilon;).html_safe, new_user_session_path
+    "Page Rendered in #{sprintf('%.3f', (Time.now.usec - @start_time).abs / 1000000.0)}&plusmn;#{auth_link} seconds."
   end
 
   def current_url

@@ -30,8 +30,7 @@ html
     = yield
     footer
       pre
-        span.page_load_time= page_load_time
+        span.page_load_time= page_load_time.html_safe
         span.copy_right
-          = link_to %(&#916;).html_safe, new_user_session_path
           = "Copyright © #{Time.now.year} - David A. Chapman"
     = javascript_include_tag "disqus_comment_counter"

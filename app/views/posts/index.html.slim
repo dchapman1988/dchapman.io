@@ -9,7 +9,8 @@ div.blog_wrapper
       div.post_body
         = render_markdown(post.body).html_safe
       div.post_actions
-        = link_to('read more&rarr;'.html_safe, post, anchor: "disqus_thread", class: 'go_back_link', :"data-disqus-identifer" => post.slug) 
+        = link_to %(Comments).html_safe, %(#{post_path(post)}#disqus_thread), anchor: "disqus_thread", :"data-disqus-identifer" => post.slug
+        = link_to %(&lowast; Read More&rarr;).html_safe, post, class: 'go_back_link'
         - if current_user.present?
           = link_to 'Show', post
           = link_to 'Edit', edit_post_path(post)
