@@ -63,18 +63,11 @@ body {
   opacity: .85;
   overflow: visible;
   font-size: 34px!important;
-  padding: 0;
+  padding: 18px 0px 28px 0px;
   margin: 0px 5px 75px 5px;
   color: #BBB;
-  -webkit-transition: opacity .2s linear;
-  &:visited {
-    color: #BBB;
-  }
-  &:hover {
-    color: #BBB;
-    opacity: 1.0;
-    background-color: #fff;
-  }
+  background-color: #383838;
+  border-radius: 5px;
 }
 
 .header img.logo {
