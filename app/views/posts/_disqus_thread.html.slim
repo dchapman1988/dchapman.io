@@ -1,9 +1,10 @@
+
 #disqus_thread
 javascript:
-  var disqus_shortname = 'dchapman-io';
+  var disqus_shortname  = 'dchapman-io';
   var disqus_identifier = "#{@post.slug}";
-  var disqus_title = "#{@post.title} | dchapman.io";
-  var disqus_url = "#{current_url.to_s}";
+  var disqus_title      = "#{@post.title} | dchapman.io";
+  var disqus_url        = "#{current_url.to_s}";
   (function() {
      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';

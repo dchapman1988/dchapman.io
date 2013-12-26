@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
 
-gem 'rails', '4.0.0'
+gem 'rails', '4.0.2'
 gem 'pg'
 gem 'unicorn'
 gem 'sass-rails', '~> 4.0.0'
@@ -15,6 +15,7 @@ gem 'newrelic_rpm'
 gem 'friendly_id', '5.0.0.beta1'
 gem 'truncate_html'
 gem 'foundation-icons-sass-rails'
+gem 'coderay'
 
 group :development, :test do
   gem 'rspec-rails', '2.14.0.rc1'

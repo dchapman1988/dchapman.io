@@ -14,16 +14,15 @@
 @import 'foundation-icons';
 
 body {
-  background: url('bg.png');
+  background: url('tweed.png');
   padding: 40px 10px 10px 10px;
   height: 2150px;
   width: 850px;
   margin: 0 auto;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Droid Sans', sans-serif;
   font-weight: normal;
-  letter-spacing: normal;
   background-color: #fff;
-  color: #111;
+  color: #eee;
   font-size: 14px;
   line-height: 18px;
 }
@@ -45,19 +44,19 @@ body {
   margin: 8px 5px 0px 5px;
   -webkit-transition: opacity .2s linear;
   &:visited {
-    color: #333;
+    color: #eee;
   }
   &:hover {
-    color: #333;
+    color: #eee;
     opacity: 1.0;
-    background-color: #fff;
+    background-color: #eee;
   }
 
 }
 
 
 .header {
-  font-family: 'Faster One', cursive;
+  font-family: 'Droid Sans', cursive;
   padding: 0px 0px 20px 0px;
   text-decoration: none;
   display: inline-block;
@@ -66,13 +65,13 @@ body {
   font-size: 34px!important;
   padding: 0;
   margin: 0px 5px 75px 5px;
-  color: #111;
+  color: #eee;
   -webkit-transition: opacity .2s linear;
   &:visited {
-    color: #111;
+    color: #eee;
   }
   &:hover {
-    color: #111;
+    color: #eee;
     opacity: 1.0;
     background-color: #fff;
   }
@@ -90,37 +89,37 @@ div.post {
 }
 
 div.post_body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Droid Sans', sans-serif;
   font-size: 18px!important;
   border-bottom: 1px solid;
-  border-bottom-style: dotted;
   border-color: #D9D9D9;
   padding: 20px 0;
   margin: 4px 3px 10px 3px;
 }
 
 .post_title {
-  font-family: 'Wendy One', sans-serif;
-  letter-spacing: 1px;
+  font-family: 'Droid Sans', sans-serif;
   font-size: 22px;
   font-weight: normal;
   line-height: 1.5em;
+  letter-spacing: 2px;
   padding-left: 0%;
   text-transform: uppercase;
   margin-bottom: 0.1em;
-  border-bottom: dotted 1px #D9D9D9;
-  border-top: dotted 1px #D9D9D9;
+  border-bottom: solid 1px #D9D9D9;
+  border-top: solid 1px #D9D9D9;
 }
 
 .header a {
   padding: 15px 18px 17px 6px;
+  letter-spacing: 2px;
 }
 
 a {
   padding: 2px 2px 2px 2px;
-  color: #111;
+  color: #eee;
   &:visited {
-    color: #111;
+    color: #eee;
   }
   &:hover {
     color: #fff;
@@ -134,12 +133,11 @@ p, ol, ul, td {
   line-height: 18px;
 }
 
-pre {
-  background-color: #eee;
-  padding: 10px;
-  font-size: 11px;
-  overflow: auto;
+h3 {
+  letter-spacing: 2px;
+  font-size: 18px;
 }
+
 
 
 div {
@@ -196,4 +194,22 @@ footer {
 
 .delta_domain_epsilon {
   margin-right: 10px;
+}
+
+.comments {
+  background-color: rgba(189, 189, 189, 0.66);
+  padding: 20px 50px 20px 50px;
+  border: 1px solid white;
+  a {
+    padding: 2px 2px 2px 2px;
+    color: #111;
+    &:visited {
+      color: #111;
+    }
+    &:hover {
+      color: #111;
+      background-color: #fff;
+    }
+  }
+
 }

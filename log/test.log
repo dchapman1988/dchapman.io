@@ -23836,3 +23836,320 @@ Completed 200 OK in 5ms (Views: 1.2ms | ActiveRecord: 0.6ms)
   [1m[35m (0.4ms)[0m  RELEASE SAVEPOINT active_record_1
   [1m[36mUser Exists (0.7ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'fred17@daniel.name' LIMIT 1[0m
   [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (5.6ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'shayna1@wintheisermosciski.net' LIMIT 1
+  [1m[36mSQL (26.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 20 Dec 2013 04:13:25 UTC +00:00], ["email", "shayna1@wintheisermosciski.net"], ["encrypted_password", "$2a$04$s4DI.Rv6hoWYrhhxq3bEzu58xGCcNJfBluLbe232MLxwQwNcfapD."], ["updated_at", Fri, 20 Dec 2013 04:13:25 UTC +00:00]]
+  [1m[35m (2.4ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'shayna1@wintheisermosciski.net' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPost Exists (1.4ms)[0m  [1mSELECT 1 AS one FROM "posts" WHERE "posts"."slug" = 'voluptatum-fugit-inventore-facilis-hic-magni-eius-ea' LIMIT 1[0m
+  [1m[35mPost Exists (0.7ms)[0m  SELECT 1 AS one FROM "posts" WHERE "posts"."title" = 'Voluptatum fugit inventore facilis hic magni eius ea.' LIMIT 1
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "posts" ("body", "created_at", "slug", "title", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "Qui laboriosam qui non adipisci voluptatem dolor ad. Molestias neque expedita recusandae. Ipsa tenetur quo quia quisquam dolorem. Et odit harum placeat. Possimus porro ea amet sed tenetur non."], ["created_at", Fri, 20 Dec 2013 04:13:25 UTC +00:00], ["slug", "voluptatum-fugit-inventore-facilis-hic-magni-eius-ea"], ["title", "Voluptatum fugit inventore facilis hic magni eius ea."], ["updated_at", Fri, 20 Dec 2013 04:13:25 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mPost Exists (0.9ms)[0m  [1mSELECT 1 AS one FROM "posts" WHERE "posts"."slug" = 'voluptatum-fugit-inventore-facilis-hic-magni-eius-ea' LIMIT 1[0m
+  [1m[35mPost Exists (0.7ms)[0m  SELECT 1 AS one FROM "posts" WHERE "posts"."title" = 'Voluptatum fugit inventore facilis hic magni eius ea.' LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mPost Exists (1.0ms)[0m  SELECT 1 AS one FROM "posts" WHERE "posts"."slug" = 'vel-quae-et-placeat-quidem-qui' LIMIT 1
+  [1m[36mPost Exists (0.7ms)[0m  [1mSELECT 1 AS one FROM "posts" WHERE "posts"."title" = 'Vel quae et placeat quidem qui.' LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "posts" ("body", "created_at", "slug", "title", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["body", "Placeat tempora nam nihil. Ex beatae voluptas deleniti sit. Consequuntur ipsam excepturi facere et sit."], ["created_at", Fri, 20 Dec 2013 04:13:25 UTC +00:00], ["slug", "vel-quae-et-placeat-quidem-qui"], ["title", "Vel quae et placeat quidem qui."], ["updated_at", Fri, 20 Dec 2013 04:13:25 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mPost Exists (0.9ms)[0m  SELECT 1 AS one FROM "posts" WHERE "posts"."slug" = 'vel-quae-et-placeat-quidem-qui' LIMIT 1
+  [1m[36mPost Exists (0.7ms)[0m  [1mSELECT 1 AS one FROM "posts" WHERE "posts"."title" = 'Vel quae et placeat quidem qui.' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+Started GET "/posts" for 127.0.0.1 at 2013-12-19 22:13:25 -0600
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.5ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+  Rendered shared/_meta.html.erb (5.3ms)
+Completed 200 OK in 948ms (Views: 944.1ms | ActiveRecord: 2.5ms)
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (1.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'roma2@paucek.biz' LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00], ["email", "roma2@paucek.biz"], ["encrypted_password", "$2a$04$faUWRHkNTcSq3MroSMUrG.ysTTr3xFfe5beibMJJwHwRRz2iTeIrK"], ["updated_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 7ms (Views: 2.0ms | ActiveRecord: 1.5ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.8ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'lucas.robel3@littel.net' LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00], ["email", "lucas.robel3@littel.net"], ["encrypted_password", "$2a$04$Zyc8PM1uMXlnrU6C6vyvYuWh8Mhoi9F.J9ssVuD6VWPXgtZGZ2o2S"], ["updated_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "posts"
+Processing by PostsController#create as HTML
+  Parameters: {"post"=>{"title"=>"Some string", "body"=>"Some text."}}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPost Exists (0.7ms)[0m  [1mSELECT 1 AS one FROM "posts" WHERE "posts"."slug" = 'some-string' LIMIT 1[0m
+  [1m[35mPost Exists (0.7ms)[0m  SELECT 1 AS one FROM "posts" WHERE "posts"."title" = 'Some string' LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "posts" ("body", "created_at", "slug", "title", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "Some text."], ["created_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00], ["slug", "some-string"], ["title", "Some string"], ["updated_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/posts/some-string
+Completed 302 Found in 11ms (ActiveRecord: 3.7ms)
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.8ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'hattie4@romagueraankunding.net' LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00], ["email", "hattie4@romagueraankunding.net"], ["encrypted_password", "$2a$04$zBwqBEEjuBobkzkihgLroOyg22e9dsA32FqayBFl9lTeVI8TPufCq"], ["updated_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by PostsController#create as HTML
+  Parameters: {"post"=>{"title"=>"Some string", "body"=>"Some text."}}
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mPost Exists (0.7ms)[0m  SELECT 1 AS one FROM "posts" WHERE "posts"."slug" = 'some-string' LIMIT 1
+  [1m[36mPost Exists (0.6ms)[0m  [1mSELECT 1 AS one FROM "posts" WHERE "posts"."title" = 'Some string' LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "posts" ("body", "created_at", "slug", "title", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["body", "Some text."], ["created_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00], ["slug", "some-string"], ["title", "Some string"], ["updated_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/posts/some-string
+Completed 302 Found in 11ms (ActiveRecord: 3.7ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.8ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'gwendolyn5@murazikdaniel.org' LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00], ["email", "gwendolyn5@murazikdaniel.org"], ["encrypted_password", "$2a$04$WNE4xjBwMvkD/bov/D/tPeY90SqCdn04kHVB90udfcLnIYvJArhPq"], ["updated_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by PostsController#create as HTML
+  Parameters: {"post"=>{"title"=>"Some string", "body"=>"Some text."}}
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mPost Exists (0.7ms)[0m  SELECT 1 AS one FROM "posts" WHERE "posts"."slug" = 'some-string' LIMIT 1
+  [1m[36mPost Exists (0.6ms)[0m  [1mSELECT 1 AS one FROM "posts" WHERE "posts"."title" = 'Some string' LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "posts" ("body", "created_at", "slug", "title", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["body", "Some text."], ["created_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00], ["slug", "some-string"], ["title", "Some string"], ["updated_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/posts/some-string
+Completed 302 Found in 11ms (ActiveRecord: 3.7ms)
+  [1m[35mPost Load (0.8ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at ASC LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.8ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'alysa6@stehr.name' LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00], ["email", "alysa6@stehr.name"], ["encrypted_password", "$2a$04$gs3zQZPcYh8qo2qEPzAJ6OMDJZcEgobTKvylUoWR8Af05lwmMBYVW"], ["updated_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by PostsController#create as HTML
+  Parameters: {"post"=>{"title"=>"invalid value"}}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 6 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 5ms (Views: 1.2ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.8ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'furman.torp7@blanda.info' LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00], ["email", "furman.torp7@blanda.info"], ["encrypted_password", "$2a$04$1ZAaVfmJjKhyn.ITBxVnCuAehjEydS98z3YXQ/pXD6ExijDyP96UO"], ["updated_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by PostsController#create as HTML
+  Parameters: {"post"=>{"title"=>"invalid value"}}
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 5ms (Views: 1.2ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.8ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'jake8@kautzer.net' LIMIT 1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00], ["email", "jake8@kautzer.net"], ["encrypted_password", "$2a$04$81m8vftWTppjnq0fI0YS.eUjocMcuHrghEpQ1ga.ER80an0XhBIVi"], ["updated_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mPost Exists (0.7ms)[0m  SELECT 1 AS one FROM "posts" WHERE "posts"."slug" = 'some-string' LIMIT 1
+  [1m[36mPost Exists (0.6ms)[0m  [1mSELECT 1 AS one FROM "posts" WHERE "posts"."title" = 'Some string' LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "posts" ("body", "created_at", "slug", "title", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["body", "Some text."], ["created_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00], ["slug", "some-string"], ["title", "Some string"], ["updated_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "posts"
+Processing by PostsController#destroy as HTML
+  Parameters: {"id"=>"some-string"}
+  [1m[36mPost Load (0.9ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."slug" = 'some-string' ORDER BY created_at DESC LIMIT 1[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "posts" WHERE "posts"."id" = $1  [["id", 6]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/posts
+Completed 302 Found in 8ms (ActiveRecord: 3.3ms)
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.8ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'jackie9@moen.org' LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00], ["email", "jackie9@moen.org"], ["encrypted_password", "$2a$04$HhrI/gakdEJnVPg4RjxvXuKWvXhcdw3F4DMKXShVzyI3PXOvYxnfK"], ["updated_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mPost Exists (0.7ms)[0m  SELECT 1 AS one FROM "posts" WHERE "posts"."slug" = 'some-string' LIMIT 1
+  [1m[36mPost Exists (0.6ms)[0m  [1mSELECT 1 AS one FROM "posts" WHERE "posts"."title" = 'Some string' LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "posts" ("body", "created_at", "slug", "title", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["body", "Some text."], ["created_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00], ["slug", "some-string"], ["title", "Some string"], ["updated_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by PostsController#destroy as HTML
+  Parameters: {"id"=>"some-string"}
+  [1m[35mPost Load (0.9ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."slug" = 'some-string' ORDER BY created_at DESC LIMIT 1
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 7]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/posts
+Completed 302 Found in 7ms (ActiveRecord: 2.8ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.8ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'joy10@croninrau.com' LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00], ["email", "joy10@croninrau.com"], ["encrypted_password", "$2a$04$s20KGSPWqMvRPFT5QStNiegPDEdXkiWVnYg0DWCckiIgcG2hNwazq"], ["updated_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mPost Exists (0.7ms)[0m  SELECT 1 AS one FROM "posts" WHERE "posts"."slug" = 'some-string' LIMIT 1
+  [1m[36mPost Exists (0.6ms)[0m  [1mSELECT 1 AS one FROM "posts" WHERE "posts"."title" = 'Some string' LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "posts" ("body", "created_at", "slug", "title", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["body", "Some text."], ["created_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00], ["slug", "some-string"], ["title", "Some string"], ["updated_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"some-string"}
+  [1m[35mPost Load (0.9ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."slug" = 'some-string' ORDER BY created_at DESC LIMIT 1
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 10 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 6ms (Views: 1.9ms | ActiveRecord: 1.7ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.8ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'jeramy.stanton11@parker.org' LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00], ["email", "jeramy.stanton11@parker.org"], ["encrypted_password", "$2a$04$TNNdSG8FQWKYk.UmkobYaebqkvDeIVFtkhIfO9RgIrgxP1G.0f.ju"], ["updated_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPost Exists (0.7ms)[0m  [1mSELECT 1 AS one FROM "posts" WHERE "posts"."slug" = 'some-string' LIMIT 1[0m
+  [1m[35mPost Exists (0.6ms)[0m  SELECT 1 AS one FROM "posts" WHERE "posts"."title" = 'Some string' LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "posts" ("body", "created_at", "slug", "title", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "Some text."], ["created_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00], ["slug", "some-string"], ["title", "Some string"], ["updated_at", Fri, 20 Dec 2013 04:13:26 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"some-string"}
+  [1m[36mPost Load (0.9ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."slug" = 'some-string' ORDER BY created_at DESC LIMIT 1[0m
+  [1m[35mPost Load (0.8ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."slug" = 'some-string' ORDER BY created_at DESC LIMIT 1
+Completed 200 OK in 6ms (Views: 1.9ms | ActiveRecord: 1.7ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.8ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'wilhelmine_okuneva12@lowe.net' LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 20 Dec 2013 04:13:27 UTC +00:00], ["email", "wilhelmine_okuneva12@lowe.net"], ["encrypted_password", "$2a$04$g/MlJDVQtJjhOJQrPeA.X.XO5LCWZQvAjPR8tBcflYmLOv5y3Mje."], ["updated_at", Fri, 20 Dec 2013 04:13:27 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mPost Exists (0.8ms)[0m  SELECT 1 AS one FROM "posts" WHERE "posts"."slug" = 'some-string' LIMIT 1
+  [1m[36mPost Exists (0.6ms)[0m  [1mSELECT 1 AS one FROM "posts" WHERE "posts"."title" = 'Some string' LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "posts" ("body", "created_at", "slug", "title", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["body", "Some text."], ["created_at", Fri, 20 Dec 2013 04:13:27 UTC +00:00], ["slug", "some-string"], ["title", "Some string"], ["updated_at", Fri, 20 Dec 2013 04:13:27 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by PostsController#update as HTML
+  Parameters: {"post"=>{"title"=>"MyString"}, "id"=>"some-string"}
+  [1m[35mPost Load (0.9ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."slug" = 'some-string' ORDER BY created_at DESC LIMIT 1
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 12 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 6ms (Views: 1.1ms | ActiveRecord: 1.7ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.8ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'holden.reynolds13@wittinggoyette.biz' LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Fri, 20 Dec 2013 04:13:27 UTC +00:00], ["email", "holden.reynolds13@wittinggoyette.biz"], ["encrypted_password", "$2a$04$qV4ONVyQs86o9WpHAbWCGOrROiG9nMAWUEf.rAnvZyNCnQ59UHMLm"], ["updated_at", Fri, 20 Dec 2013 04:13:27 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPost Exists (0.7ms)[0m  [1mSELECT 1 AS one FROM "posts" WHERE "posts"."slug" = 'some-string' LIMIT 1[0m
+  [1m[35mPost Exists (0.6ms)[0m  SELECT 1 AS one FROM "posts" WHERE "posts"."title" = 'Some string' LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "posts" ("body", "created_at", "slug", "title", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "Some text."], ["created_at", Fri, 20 Dec 2013 04:13:27 UTC +00:00], ["slug", "some-string"], ["title", "Some string"], ["updated_at", Fri, 20 Dec 2013 04:13:27 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by PostsController#update as HTML
+  Parameters: {"post"=>{"title"=>"Some string", "body"=>"Some text."}, "id"=>"some-string"}
+  [1m[36mPost Load (0.9ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."slug" = 'some-string' ORDER BY created_at DESC LIMIT 1[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 13 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mPost Exists (0.8ms)[0m  SELECT 1 AS one FROM "posts" WHERE ("posts"."title" = 'Some string' AND "posts"."id" != 11) LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/posts/some-string
+Completed 302 Found in 10ms (ActiveRecord: 3.2ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.8ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'bobby14@hegmann.info' LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Fri, 20 Dec 2013 04:13:27 UTC +00:00], ["email", "bobby14@hegmann.info"], ["encrypted_password", "$2a$04$ix1a/juNfdwuslTEPw1hUudI8c9zFPq5yoZfDl4ZiwHKgleYq1R.y"], ["updated_at", Fri, 20 Dec 2013 04:13:27 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPost Exists (0.7ms)[0m  [1mSELECT 1 AS one FROM "posts" WHERE "posts"."slug" = 'some-string' LIMIT 1[0m
+  [1m[35mPost Exists (0.6ms)[0m  SELECT 1 AS one FROM "posts" WHERE "posts"."title" = 'Some string' LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "posts" ("body", "created_at", "slug", "title", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "Some text."], ["created_at", Fri, 20 Dec 2013 04:13:27 UTC +00:00], ["slug", "some-string"], ["title", "Some string"], ["updated_at", Fri, 20 Dec 2013 04:13:27 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by PostsController#update as HTML
+  Parameters: {"post"=>{"title"=>"Some string", "body"=>"Some text."}, "id"=>"some-string"}
+  [1m[36mPost Load (0.9ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."slug" = 'some-string' ORDER BY created_at DESC LIMIT 1[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 14 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mPost Exists (0.7ms)[0m  SELECT 1 AS one FROM "posts" WHERE ("posts"."title" = 'Some string' AND "posts"."id" != 12) LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/posts/some-string
+Completed 302 Found in 9ms (ActiveRecord: 3.1ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.8ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'theodore_ferry15@hirthe.info' LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Fri, 20 Dec 2013 04:13:27 UTC +00:00], ["email", "theodore_ferry15@hirthe.info"], ["encrypted_password", "$2a$04$kC4y.yxdA58g2fun.BRSBeNuCP.rgRFGaA4gmJUm3MT5XCaux3yuC"], ["updated_at", Fri, 20 Dec 2013 04:13:27 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPost Exists (0.7ms)[0m  [1mSELECT 1 AS one FROM "posts" WHERE "posts"."slug" = 'some-string' LIMIT 1[0m
+  [1m[35mPost Exists (0.6ms)[0m  SELECT 1 AS one FROM "posts" WHERE "posts"."title" = 'Some string' LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "posts" ("body", "created_at", "slug", "title", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "Some text."], ["created_at", Fri, 20 Dec 2013 04:13:27 UTC +00:00], ["slug", "some-string"], ["title", "Some string"], ["updated_at", Fri, 20 Dec 2013 04:13:27 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by PostsController#update as HTML
+  Parameters: {"post"=>{"title"=>"invalid value"}, "id"=>"some-string"}
+  [1m[36mPost Load (0.9ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."slug" = 'some-string' ORDER BY created_at DESC LIMIT 1[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 15 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 9ms (Views: 1.1ms | ActiveRecord: 3.5ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.8ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'maggie_hammes16@schultz.info' LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 20 Dec 2013 04:13:27 UTC +00:00], ["email", "maggie_hammes16@schultz.info"], ["encrypted_password", "$2a$04$oVwhHIR28n95iD9RtUpVpuRaZfoXv76nVpEtYpECpAK6aVwyPnzS6"], ["updated_at", Fri, 20 Dec 2013 04:13:27 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mPost Exists (0.7ms)[0m  SELECT 1 AS one FROM "posts" WHERE "posts"."slug" = 'some-string' LIMIT 1
+  [1m[36mPost Exists (0.6ms)[0m  [1mSELECT 1 AS one FROM "posts" WHERE "posts"."title" = 'Some string' LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "posts" ("body", "created_at", "slug", "title", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["body", "Some text."], ["created_at", Fri, 20 Dec 2013 04:13:27 UTC +00:00], ["slug", "some-string"], ["title", "Some string"], ["updated_at", Fri, 20 Dec 2013 04:13:27 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by PostsController#update as HTML
+  Parameters: {"post"=>{"title"=>"invalid value"}, "id"=>"some-string"}
+  [1m[35mPost Load (0.9ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."slug" = 'some-string' ORDER BY created_at DESC LIMIT 1
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 16 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 8ms (Views: 1.2ms | ActiveRecord: 2.4ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.8ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'faye17@hane.name' LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Fri, 20 Dec 2013 04:13:27 UTC +00:00], ["email", "faye17@hane.name"], ["encrypted_password", "$2a$04$EsAZmDCOacxhxkbqDURQ.e4g0dtF6tSuWZRna4OvygAbhERblT.qC"], ["updated_at", Fri, 20 Dec 2013 04:13:27 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPost Exists (0.8ms)[0m  [1mSELECT 1 AS one FROM "posts" WHERE "posts"."slug" = 'some-string' LIMIT 1[0m
+  [1m[35mPost Exists (0.6ms)[0m  SELECT 1 AS one FROM "posts" WHERE "posts"."title" = 'Some string' LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "posts" ("body", "created_at", "slug", "title", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "Some text."], ["created_at", Fri, 20 Dec 2013 04:13:27 UTC +00:00], ["slug", "some-string"], ["title", "Some string"], ["updated_at", Fri, 20 Dec 2013 04:13:27 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by PostsController#index as HTML
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
