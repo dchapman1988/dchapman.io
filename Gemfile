@@ -15,7 +15,6 @@ gem 'newrelic_rpm'
 gem 'friendly_id', '5.0.0.beta1'
 gem 'truncate_html'
 gem 'foundation-icons-sass-rails'
-gem 'coderay'
 
 group :development, :test do
   gem 'rspec-rails', '2.14.0.rc1'
