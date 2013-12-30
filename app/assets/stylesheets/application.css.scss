@@ -250,9 +250,15 @@ pre {
   border: 1px solid #CCC;
   font-family: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace!important;
   color: black;
-  margin: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 0px;
   font-weight: bold;
   padding: 10px;
   overflow: auto;
   font-size: 14px!important;
+}
+
+strong {
+  font-weight: 900;
+  font-size: 1.0em;
+  letter-spacing: 1px;
 }
