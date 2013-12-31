@@ -28,8 +28,11 @@ body {
 }
 
 .social_buttons {
-  width: 158px;
+  width: 250px;
+  height: auto;
   float: right;
+  padding: 0px 5px 5px 5px!important;
+  border-radius: 5px;
 }
 
 .social_buttons a {
@@ -38,18 +41,20 @@ body {
   height: 20px!important;
   display: inline-block;
   opacity: .6;
+  border-radius: 5px;
   overflow: visible;
   font-size: 20px;
-  padding: 0;
+  padding-left: 8px;
   margin: 8px 5px 0px 5px;
+  padding: 8px 8px 8px 12px;
   -webkit-transition: opacity .2s linear;
   &:visited {
     color: #BBB;
   }
   &:hover {
     color: #BBB;
+    background-color: #383838;
     opacity: 1.0;
-    background-color: #BBB;
   }
 
 }
