@@ -25,6 +25,12 @@ html
           i class="fi-rss"
       h1.header
         = link_to(image_tag('ruby_icon.png', class: 'logo') + 'david@dchapman.io', root_path)
+    - if notice.present?
+      notice
+        = notice
+        =link_to('#', id: 'close_notice')
+          span#close_notice_button
+            | &#10006;
     = yield
     footer
       pre

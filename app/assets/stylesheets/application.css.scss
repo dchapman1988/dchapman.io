@@ -150,8 +150,13 @@ div {
   }
 }
 
-#notice {
+notice {
+  padding: 10px;
+  border-radius: 5px;
   color: green;
+  display: block;
+  background-color: #383838;
+  margin: 10px 0px 10px 0px;
 }
 
 .field_with_errors {
@@ -267,4 +272,15 @@ strong {
   font-weight: 900;
   font-size: 1.0em;
   letter-spacing: 1px;
+}
+
+span#close_notice_button {
+  font-weight: lighter;
+  font-size: 14px;
+  background-color: black;
+  padding: 2px 4px 2px 3px;
+  border-radius: 5px;
+  color: darkgray;
+  float: right;
+  text-decoration: none;
 }
